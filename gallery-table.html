@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gourmet Coffee & Tea</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .box-shadow {
+            -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.75);
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.1);
+        }
+
+        .main-container-grid {
+            grid-template-rows: 1fr 13fr 1fr;
+            height: 100%;
+            display: grid;
+            grid-row-gap: 1em;
+        }
+
+        .r1,
+        .r3 {
+            background-color: #9bc1bc;
+            padding: 1em;
+            align-self: center;
+        }
+        .r1>img {
+            margin: auto;
+            width: 166px;
+            border: 2px solid green;
+            padding: 10px;
+            height: 100px;
+        }
+        .r2 {
+            height: 100%;
+            background-color: #36027a;
+        }
+
+        .r3 {
+            color: #f4f1bb;
+            text-align: center;
+        }
+
+        .c1 {
+            min-width: 200px;
+        }
+
+        .c2 {
+            /* display: grid; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-rows: repeat(3, 1fr); */
+            width: 100%;
+            /* grid-auto-rows: min-content; */
+        }
+
+        .c2>img {
+            width: 100%;
+            height: auto;
+            background-size: contain;
+            object-fit: contain;
+            align-self: center;
+            max-height: 150px;
+        }
+
+        .three-column {
+            display: grid;
+            grid-template-columns: 2fr 8fr;
+            background-color: #36027a;
+            grid-column-gap: 1em;
+        }
+
+        .c1,
+        .c3 {
+            background-color: #6330a7   ;
+
+        }
+
+        .txt-center {
+            text-align: center;
+            margin: 15px auto 0px;
+            border-bottom: 1px solid #a8a7a7;
+            padding-bottom: 15px;
+        }
+
+        .left-nav {
+            list-style-type: none;
+        }
+
+        .left-nav>li>a {
+            display: block;
+            padding: 15px 0px;
+            background-color: #6330a7   ;
+            padding-left: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: .7s;
+            color:#f4f1bb
+        }
+
+        .left-nav>li>a:hover {
+            background-color: #8d8c8c;
+        }
+
+        .h2-content {
+            grid-column: 1 / 5;
+            height: 21px;
+            width: 200px;
+        }
+
+        /* .c2-first-row{
+            grid-column: 1/5;
+        } */
+        .grid-button {
+            /* padding: 6px 12px;
+            background-color: #ccc;
+            float: right;
+            display: block; */
+        }
+
+        .gallery-table {
+            display: table;
+            width: 100%;
+        }
+
+        .gallery-table thead {
+            font-size: 16px;
+            font-weight: bold;
+            background-color: rgb(3, 222, 238);
+        }
+
+        .gallery-table td {
+            border: 1px solid rgb(250, 247, 247);
+            padding-left: 10px;
+            background-color: #ccc;
+        }
+
+        .gallery-table>tbody>tr>td>img {
+            max-width: 150px;
+        }
+
+        .buy-button {
+            padding: 7px 16px;
+            background-color: green;
+            float: right;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 16px;
+            transition-duration: 0.5s;
+        }
+
+        .buy-button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<bod class="main-container-grid">
+    <div class="r1">
+        <img src="./Img/sm_logo.jpg" class="logo-image box-shadow" alt="Logo Pic">
+    </div>
+    <div class="r2 three-column">
+        <div class="c1">
+            <h2 class="txt-center">Navigation</h2>
+            <ul class="left-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+                <li><a href="./gallery-table.html">Gallery Table</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="c2">
+            <div class="c2-first-row">
+                <!-- <a href="./gallery.html" class="grid-button">Gallery View</a> -->
+                <h2 class="txt-center h2-content">Coffee Details Gallery</h2>
+
+            </div>
+            <table class="gallery-table">
+                <thead>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            Product ID
+                        </td>
+                        <td>
+                            Price
+                        </td>
+                        <td>
+                            Serving Prefs
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="./IMG/image_1.jpeg">
+                        </td>
+                        <td>
+                            1001
+                        </td>
+                        <td>
+                            $7.99
+                        </td>
+                        <td>
+                            Hot
+                        </td>
+                        <td>
+                            <button class="buy-button">Coffee Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./IMG/image_2.jpeg">
+                        </td>
+                        <td>
+                            1002
+                        </td>
+                        <td>
+                            $199
+                        </td>
+                        <td>
+                            Hot
+                        </td>
+                        <td>
+                            <button class="buy-button">Coffee Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./IMG/image_3.jpeg">
+                        </td>
+                        <td>
+                            1003
+                        </td>
+                        <td>
+                            $199
+                        </td>
+                        <td>
+                            Cold
+                        </td>
+                        <td>
+                            <button class="buy-button">Coffee Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./IMG/image_4.jpeg">
+                        </td>
+                        <td>
+                            1004
+                        </td>
+                        <td>
+                            $199
+                        </td>
+                        <td>
+                            Col
+                        </td>
+                        <td>
+                            <button class="buy-button">Coffee Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./IMG/image_5.jpeg">
+                        </td>
+                        <td>
+                            1005
+                        </td>
+                        <td>
+                            $199
+                        </td>
+                        <td>
+                            Cold
+                        </td>
+                        <td>
+                            <button class="buy-button">Coffee Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./IMG/image_6.jpg">
+                        </td>
+                        <td>
+                            1006
+                        </td>
+                        <td>
+                            $199
+                        </td>
+                        <td>
+                            Hot
+                        </td>
+                        <td>
+                            <button class="buy-button">Coffee Details</button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <!-- <img src="./IMG/1.jpg">
+            <img src="./IMG/2.jpg">
+            <img src="./IMG/3.jpg">
+            <img src="./IMG/4.jpg">
+            <img src="./IMG/5.jpg">
+            <img src="./IMG/6.jpg">
+            <img src="./IMG/7.jpg">
+            <img src="./IMG/8.jpg">
+            <img src="./IMG/9.jpg">
+            <img src="./IMG/10.jpg">
+            <img src="./IMG/11.jpg">
+            <img src="./IMG/12.jpg"> -->
+        </div>
+        <!-- <div class="c3">
+            <h2 class="txt-center">Recent Product</h2>
+        </div> -->
+    </div>
+    <div class="r3">
+        Copyright (C) 14MAR2019 - Jason Cartwright - For educational purpose only! No orders shall be fulfilled!!!
+    </div>
+    </div>
+</bod>
+
+</html>
