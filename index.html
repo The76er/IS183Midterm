@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>MidTerm</title>
+    <title>Gourmet Coffee & Tea</title>
     <style>
         * {
             margin: 0px;
@@ -44,9 +44,17 @@
 
         .r1,
         .r3 {
-            background-color: #ccc;
+            background-color: #9BC1BC;
             padding: 1em;
             align-self: center;
+        }
+
+        .r1>img {
+            margin: auto;
+            width: 166px;
+            border: 2px solid green;
+            padding: 10px;
+            height: 100px;
         }
 
         .r2 {
@@ -55,7 +63,7 @@
         }
 
         .r3 {
-
+            color: #F4F1BB;
             text-align: center;
         }
 
@@ -73,24 +81,35 @@
 
         .c2>img {
             width: 200px;
+
             height: 200px;
+
             background-size: contain;
+
             object-fit: cover;
+
             align-self: center;
-            /* max-height: 150px; */
+
+            max-height: 150px;
+
             margin: 10px;
+
+            margin-top: 10px;
+
+            margin-top: 85px;
         }
 
         .three-column {
             display: grid;
             grid-template-columns: 2fr 8fr 3fr;
-            background-color: #ffffff;
+            background-color: #36027a;
             grid-column-gap: 1em;
         }
 
         .c1,
         .c3 {
-            background-color: #ccc;
+            background-color: #6330a7   ;
+          
 
         }
 
@@ -108,13 +127,23 @@
         .left-nav>li>a {
             display: block;
             padding: 15px 0px;
-            background-color: #ccc;
+            background-color: #6330a7   ;
             padding-left: 30px;
             text-decoration: none;
             font-weight: bold;
             transition-duration: .7s;
+            color: #F4F1BB;
         }
-
+        .c3>li{
+            display: block;
+            padding: 15px 0px;
+            background-color: #6330a7   ;
+            padding-left: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: .7s;
+            color: #F4F1BB;
+        }
         .left-nav>li>a:hover {
             background-color: #8d8c8c;
         }
@@ -123,12 +152,20 @@
             grid-column: 1 / 5;
             height: 21px;
             width: 100%;
+            color: #F4F1BB;
+        }
+
+        .paragraph {
+            grid-column: 1 / 5;
+            height: 21px;
+            width: 100%;
+            color: #F4F1BB;
         }
     </style>
 </head>
 <bod class="main-container-grid">
     <div class="r1">
-        <h2>Jason Cartwright</h2>
+        <img src="./Img/sm_logo.jpg" class="logo-image box-shadow" alt="Logo Pic">
     </div>
     <div class="r2 three-column">
         <div class="c1">
@@ -143,25 +180,35 @@
         </div>
         <div class="c2">
             <h2 class="txt-center h2-content">Recent Product</h2>
-            <img src="./IMG/1.jpg">
-            <img src="./IMG/2.jpg">
-            <img src="./IMG/3.jpg">
-            <img src="./IMG/4.jpg">
-            <img src="./IMG/5.jpg">
-            <img src="./IMG/6.jpg">
-            <img src="./IMG/7.jpg">
-            <img src="./IMG/8.jpg">
-            <img src="./IMG/9.jpg">
-            <img src="./IMG/10.jpg">
-            <img src="./IMG/11.jpg">
-            <img src="./IMG/12.jpg">
+            <p class="paragraph">Gourmet coffee made from the beans of this plant tastes great and holds a premium
+                position in the market.
+                Gourmet coffees from Arabica coffee beans boast of a finer aroma, richer flavor, and more body than
+                those made from Robusta beans. The Robusta beans on the other hand, are known for their
+                disease-resistance properties and are more popularly used in commercial blends.
+
+                People enjoy the taste of the sophisticated beans used in the making of this delightful gourmet drink.
+                When purchasing coffee beans from different areas they all go through the same type of process. Beans
+                are picked, dried, and sorted pretty much the same way. </p>
+            <img src="./IMG/image_1.jpeg">
+            <img src="./IMG/image_2.jpeg">
+            <img src="./IMG/image_3.jpeg">
+            <img src="./IMG/image_4.jpeg">
+            <img src="./IMG/image_5.jpeg">
+            <img src="./IMG/image_6.jpg">
+            
         </div>
         <div class="c3">
             <h2 class="txt-center">Recent Product</h2>
+            <li>Black Coffee</li>
+                <li>Flower Coffee</li>
+                <li>Heart Coffee</li>
+                <li>Arabic Coffee</li>
+                <li>Leaf Coffee</li>
+                <li>Swan Coffee</li>
         </div>
     </div>
     <div class="r3">
-        Copyright 2019 - Jason Cartwright
+        Copyright (C) 14MAR2019 - Jason Cartwright - For educational purpose only! No orders shall be fulfilled!!!
     </div>
     </div>
 </bod>

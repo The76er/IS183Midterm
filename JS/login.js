@@ -6,7 +6,7 @@ var Login = /** @class */ (function () {
         var passwordInput = document.getElementById('password');
         var username = usernameInput.value;
         var password = passwordInput.value;
-        if (username === 'lphan' && password === 'abc123') {
+        if (username === 'JCartwright' && password === 'Money') {
             this.goToHome();
         }
         else {
