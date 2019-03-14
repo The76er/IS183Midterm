@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>MidTerm</title>
+    <title>Assignment 4</title>
     <style>
         * {
             margin: 0px;
@@ -75,7 +75,7 @@
             width: 200px;
             height: 200px;
             background-size: contain;
-            object-fit: cover;
+            /* object-fit: contain; */
             align-self: center;
             /* max-height: 150px; */
             margin: 10px;
@@ -124,6 +124,16 @@
             height: 21px;
             width: 100%;
         }
+
+        .c2-first-row {
+            grid-column: 1/5;
+        }
+
+        .grid-button {
+            padding: 6px 12px;
+            background-color: #ccc;
+            float: right;
+        }
     </style>
 </head>
 <bod class="main-container-grid">
@@ -142,7 +152,12 @@
             </ul>
         </div>
         <div class="c2">
-            <h2 class="txt-center h2-content">Recent Product</h2>
+            <div class="c2-first-row">
+                <a href="./gallery-table.html" class="grid-button">Grid View</a>
+                <h2 class="txt-center h2-content">Gallery</h2>
+
+            </div>
+
             <img src="./IMG/1.jpg">
             <img src="./IMG/2.jpg">
             <img src="./IMG/3.jpg">
